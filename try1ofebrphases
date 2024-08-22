@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EBR Best Practices Checklist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+        .section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .section h3 {
+            margin-top: 0;
+            color: #444;
+        }
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        select, input[type="text"], textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            resize: vertical;
+        }
+        .checkbox-group {
+            margin-bottom: 15px;
+        }
+        .checkbox-group label {
+            font-weight: normal;
+            display: inline-block;
+            margin-right: 10px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>EBR Best Practices Checklist</h2>
+
+        <!-- School Selection -->
+        <div class="section">
+            <label for="school">Pick a School:</label>
+            <select id="school" name="school">
+                <option value="Ben Franklin">Ben Franklin</option>
+                <option value="CBE">CBE</option>
+                <option value="Discovery">Discovery</option>
+                <option value="North">North</option>
+                <option value="South">South</option>
+                <option value="Davies">Davies</option>
+            </select>
+
+            <label for="course">What course do you teach? If you have multiple preps, pick one for this session:</label>
+            <input type="text" id="course" name="course" placeholder="Enter your course...">
+        </div>
+
+        <!-- Phase 1 -->
+        <div class="section">
+            <h3>Phase 1: Setting the Foundation for EBR</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="phase1-criteria1" name="phase1-criteria1">
+                <label for="phase1-criteria1">Course Enduring Skills & Proficiency Scales created</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="phase1-criteria2" name="phase1-criteria2">
+                <label for="phase1-criteria2">ELOs are identified and prioritized (state standards)</label>
+            </div>
+            <label for="phase1-notes">Notes/Ideas for Continuous Improvement, Goals, or Action Steps:</label>
+            <textarea id="phase1-notes" name="phase1-notes" placeholder="Write your notes here..."></textarea>
+        </div>
+
+        <!-- Phase 2 -->
+        <div class="section">
+            <h3>Phase 2: Common Assessment</h3>
+            <div class="checkbox-group">
+                <input type="checkbox" id="phase2-criteria1" name="phase2-criteria1">
+                <label for="phase2-criteria1">Common Formative Assessments aligned with proficiency scales and success criteria</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="phase2-criteria2" name="phase2-criteria2">
+                <label for="phase2-criteria2">Common District Summative Assessments aligned with proficiency scales and success criteria</label>
+            </div>
+            <label for="phase2-notes">Notes/Ideas for Continuous Improvement, Goals, or Action Steps:</label>
+            <textarea id="phase2-notes" name="phase2-notes" placeholder="Write your notes here..."></textarea>
+        </div>
+
+        <!-- Add more phases as needed -->
+
+        <button type="submit">Submit Checklist</button>
+    </div>
+</body>
+</html>
